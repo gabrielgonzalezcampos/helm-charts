@@ -23,8 +23,8 @@ fullnameOverride: ""
 
 images:
   mininet:
-    repository: 'andybavier/mininet'
-    tag: '{{ .Chart.AppVersion }}'
+    repository: 'opencord/mn-stratum-siab'
+    tag: 'master'
     pullPolicy: IfNotPresent
 
 global:
@@ -50,7 +50,7 @@ affinity:
         topologyKey: kubernetes.io/hostname
 
 mnStratumSwitchCount: 0
-topoScript: '/toposcripts/topo.py'
+topoScript: '/toposcripts/topo_stratum.py'
 onosOpenflowSvc: "onos-openflow.default.svc.cluster.local"
 vlanMatchDepth: 2
 enableMulticast: true
