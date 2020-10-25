@@ -36,7 +36,7 @@ spec:
       nodeSelector:
         {{ .Values.nodeSelectors.ue2.label }}: {{ .Values.nodeSelectors.ue2.value }}
     {{- end }}
-      serviceAccountName: ue
+      serviceAccountName: ue2
       hostNetwork: true
       initContainers:
         - name: ue-dep-check
@@ -64,12 +64,12 @@ spec:
             - name: DEPENDENCY_POD_JSON
               value: '[{"labels": {"app": "enb"}, "requireSameNode": true}]'
             - name: DEPENDENCY_JOBS
-              value: ue-setup-if
+              value: ue-setup-if2
           command:
             - kubernetes-entrypoint
           volumeMounts:
             []
-        - name: ue-gen-usim
+        - name: ue-gen-usim2
           image: {{ .Values.images.tags.ue | quote }}
           imagePullPolicy: {{ .Values.images.pullPolicy }}
           command:
@@ -94,7 +94,7 @@ spec:
               mountPath: /opt/oaisim/ue/scripts/ue-init.sh
               subPath: ue-init.sh
       containers:
-        - name: ue
+        - name: ue2
           image: {{ .Values.images.tags.ue | quote }}
           imagePullPolicy: {{ .Values.images.pullPolicy }}
           securityContext:
