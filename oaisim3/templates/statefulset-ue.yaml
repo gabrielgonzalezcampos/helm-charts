@@ -19,7 +19,7 @@ limitations under the License.
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
-  name: ueTest
+  name: ue
   labels:
 {{ tuple "ue" . | include "oaisim.metadata_labels" | indent 4 }}
 spec:
