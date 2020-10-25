@@ -21,16 +21,16 @@ kind: StatefulSet
 metadata:
   name: ue2
   labels:
-{{ tuple "ue" . | include "oaisim.metadata_labels" | indent 4 }}
+{{ tuple "ue2" . | include "oaisim.metadata_labels" | indent 4 }}
 spec:
   replicas: 1
   selector:
     matchLabels:
-{{ tuple "ue" . | include "oaisim.metadata_labels" | indent 6 }}
+{{ tuple "ue2" . | include "oaisim.metadata_labels" | indent 6 }}
   template:
     metadata:
       labels:
-{{ tuple "ue" . | include "oaisim.metadata_labels" | indent 8 }}
+{{ tuple "ue2" . | include "oaisim.metadata_labels" | indent 8 }}
     spec:
     {{- if .Values.nodeSelectors.enabled }}
       nodeSelector:
