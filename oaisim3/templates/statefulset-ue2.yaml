@@ -19,18 +19,18 @@ limitations under the License.
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
-  name: ue
+  name: ue2
   labels:
-{{ tuple "ue" . | include "oaisim.metadata_labels" | indent 4 }}
+{{ tuple "ue2" . | include "oaisim.metadata_labels" | indent 4 }}
 spec:
   replicas: 1
   selector:
     matchLabels:
-{{ tuple "ue" . | include "oaisim.metadata_labels" | indent 6 }}
+{{ tuple "ue2" . | include "oaisim.metadata_labels" | indent 6 }}
   template:
     metadata:
       labels:
-{{ tuple "ue" . | include "oaisim.metadata_labels" | indent 8 }}
+{{ tuple "ue2" . | include "oaisim.metadata_labels" | indent 8 }}
     spec:
     {{- if .Values.nodeSelectors.enabled }}
       nodeSelector:
@@ -73,11 +73,11 @@ spec:
           image: {{ .Values.images.tags.ue | quote }}
           imagePullPolicy: {{ .Values.images.pullPolicy }}
           command:
-            - /opt/oaisim/ue/scripts/ue-gen-usim2.sh
+            - /opt/oaisim/ue/scripts/ue-gen-usim.sh
           volumeMounts:
             - name: script
-              mountPath: /opt/oaisim/ue/scripts/ue-gen-usim2.sh
-              subPath: ue-gen-usim2.sh
+              mountPath: /opt/oaisim/ue/scripts/ue-gen-usim.sh
+              subPath: ue-gen-usim.sh
             - name: config
               mountPath: /opt/oaisim/ue/config
             - name: pod-share
