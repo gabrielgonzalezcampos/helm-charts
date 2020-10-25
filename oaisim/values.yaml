@@ -48,7 +48,7 @@ config:
         interface: eno1
       s1u:
         # Provide the interface used for S1U network.
-        interface: s1u-enb
+        interface: enb
         port: 2152
   ue:
     # 1 UE is supported for now
