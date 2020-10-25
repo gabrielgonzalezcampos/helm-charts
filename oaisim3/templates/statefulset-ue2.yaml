@@ -14,29 +14,29 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */}}
 
-{{ tuple "ue2" . | include "oaisim.service_account" }}
+{{ tuple "ue" . | include "oaisim.service_account" }}
 ---
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
-  name: ue2
+  name: ue
   labels:
-{{ tuple "ue2" . | include "oaisim.metadata_labels" | indent 4 }}
+{{ tuple "ue" . | include "oaisim.metadata_labels" | indent 4 }}
 spec:
   replicas: 1
   selector:
     matchLabels:
-{{ tuple "ue2" . | include "oaisim.metadata_labels" | indent 6 }}
+{{ tuple "ue" . | include "oaisim.metadata_labels" | indent 6 }}
   template:
     metadata:
       labels:
-{{ tuple "ue2" . | include "oaisim.metadata_labels" | indent 8 }}
+{{ tuple "ue" . | include "oaisim.metadata_labels" | indent 8 }}
     spec:
     {{- if .Values.nodeSelectors.enabled }}
       nodeSelector:
         {{ .Values.nodeSelectors.ue2.label }}: {{ .Values.nodeSelectors.ue2.value }}
     {{- end }}
-      serviceAccountName: ue2
+      serviceAccountName: ue
       hostNetwork: true
       initContainers:
         - name: ue-dep-check2
