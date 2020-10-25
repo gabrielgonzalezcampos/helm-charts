@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */}}
 
-{{ tuple "ue" . | include "oaisim.service_account" }}
+{{ tuple "ue2" . | include "oaisim.service_account" }}
 ---
 apiVersion: apps/v1
 kind: StatefulSet
@@ -34,12 +34,12 @@ spec:
     spec:
     {{- if .Values.nodeSelectors.enabled }}
       nodeSelector:
-        {{ .Values.nodeSelectors.ue.label }}: {{ .Values.nodeSelectors.ue.value }}
+        {{ .Values.nodeSelectors.ue2.label }}: {{ .Values.nodeSelectors.ue2.value }}
     {{- end }}
       serviceAccountName: ue2
       hostNetwork: true
       initContainers:
-        - name: ue-dep-check
+        - name: ue-dep-check2
           image: {{ .Values.images.tags.dep_check | quote }}
           imagePullPolicy: {{ .Values.images.pullPolicy }}
           securityContext:
@@ -69,7 +69,7 @@ spec:
             - kubernetes-entrypoint
           volumeMounts:
             []
-        - name: ue-gen-usim
+        - name: ue-gen-usim2
           image: {{ .Values.images.tags.ue | quote }}
           imagePullPolicy: {{ .Values.images.pullPolicy }}
           command:
@@ -82,7 +82,7 @@ spec:
               mountPath: /opt/oaisim/ue/config
             - name: pod-share
               mountPath: /etc/oaisim/ue
-        - name: ue-init
+        - name: ue-init2
           image: {{ .Values.images.tags.ue | quote }}
           imagePullPolicy: {{ .Values.images.pullPolicy }}
           securityContext:
