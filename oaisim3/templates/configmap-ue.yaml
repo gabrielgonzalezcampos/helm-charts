@@ -130,6 +130,6 @@ data:
   ue-init.sh: |
 {{ tuple "bin/_ue-init.sh.tpl" . | include "oaisim.template" | indent 4 }}
   ue-init2.sh: |
-  {{ tuple "bin/_ue-init2.sh.tpl" . | include "oaisim.template" | indent 4 }}
+{{ tuple "bin/_ue-init2.sh.tpl" . | include "oaisim.template" | indent 4 }}
   ue-run.sh: |
 {{ tuple "bin/_ue-run.sh.tpl" . | include "oaisim.template" | indent 4 }}
