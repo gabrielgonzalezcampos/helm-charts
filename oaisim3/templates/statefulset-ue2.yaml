@@ -73,11 +73,11 @@ spec:
           image: {{ .Values.images.tags.ue | quote }}
           imagePullPolicy: {{ .Values.images.pullPolicy }}
           command:
-            - /opt/oaisim/ue/scripts/ue-gen-usim.sh
+            - /opt/oaisim/ue/scripts/ue-gen-usim2.sh
           volumeMounts:
             - name: script
-              mountPath: /opt/oaisim/ue/scripts/ue-gen-usim.sh
-              subPath: ue-gen-usim.sh
+              mountPath: /opt/oaisim/ue/scripts/ue-gen-usim2.sh
+              subPath: ue-gen-usim2.sh
             - name: config
               mountPath: /opt/oaisim/ue/config
             - name: pod-share
@@ -100,13 +100,13 @@ spec:
           securityContext:
             privileged: true
           command:
-            - /opt/oaisim/ue/scripts/ue-run.sh
+            - /opt/oaisim/ue/scripts/ue-run2.sh
             - start
           lifecycle:
             preStop:
               exec:
                 command:
-                  - /opt/oaisim/enb/scripts/ue-run.sh
+                  - /opt/oaisim/enb/scripts/ue-run2.sh
                   - stop
           env:
             - name: UE_LOCAL_IP
@@ -115,8 +115,8 @@ spec:
                   fieldPath: status.podIP
           volumeMounts:
             - name: script
-              mountPath: /opt/oaisim/ue/scripts/ue-run.sh
-              subPath: ue-run.sh
+              mountPath: /opt/oaisim/ue/scripts/ue-run2.sh
+              subPath: ue-run2.sh
             - name: config
               mountPath: /opt/oaisim/ue/config
             - name: pod-share
