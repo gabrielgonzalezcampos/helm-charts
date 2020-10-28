@@ -1,0 +1,52 @@
+{{/*
+# Copyright 2019-present Open Networking Foundation
+
+# SPDX-License-Identifier: LicenseRef-ONF-Member-Only-1.0
+*/}}
+
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: spgwc
+  labels:
+{{ tuple "spgwc" . | include "omec-control-plane.metadata_labels" | indent 4 }}
+data:
+  cp_config.cfg: |
+    if [ ! -d "/dev/hugepages" ]; then
+        MEMORY="--no-huge -m $((MEM_LIMIT-1024))"
+    fi
+    CORES="-c $(taskset -p $$ | awk '{print $NF}')"
+    EAL_ARGS="${CORES} ${MEMORY} --no-pci"
+
+    MGMT_INFO="-s ${POD_IP} -w {{ .Values.config.spgwc.s1uAddr }}"
+    APN_INFO="-i {{ .Values.config.spgwc.ueIpPool.ip }} -p {{ .Values.config.spgwc.ueIpPool.mask }} -a {{ .Values.config.spgwc.apn }}"
+    MISC="-l 2"
+    SPGW_CFG="-d 03"
+
+{{- if .Values.config.spgwc.multiUpfs }}
+    CONFIG_UPDATE_FOLDER="-f /etc/cp/config/"
+    APP_ARGS="${MGMT_INFO} ${APN_INFO} ${MISC} ${SPGW_CFG} ${CONFIG_UPDATE_FOLDER}"
+{{- else }}
+    APP_ARGS="${MGMT_INFO} ${APN_INFO} ${MISC} ${SPGW_CFG} "
+{{- end }}
+  interface.cfg: |
+    [0]
+    zmq_protocol = tcp
+    cp_comm_ip = CP_ADDR
+    cp_comm_port = 21
+{{- if .Values.config.spgwc.multiUpfs }}
+    cp_nb_ip = CP_ADDR
+    cp_nb_port = 21
+    dp_comm_ip = 127.0.0.1
+    dp_comm_port = 20
+{{- else }}
+    dp_comm_ip = {{ .Values.config.spgwc.dpComm.addr }}
+    dp_comm_port = {{ .Values.config.spgwc.dpComm.port }}
+{{- end }}
+  spgwc-run.sh: |
+{{ tuple "bin/_spgwc-run.sh.tpl" . | include "omec-control-plane.template" | indent 4 }}
+{{- range $key, $value := .Values.config.spgwc.cfgFiles }}
+  {{ $key }}: |-
+{{ $value | indent 4 }}
+{{- end }}
