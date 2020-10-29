@@ -1,0 +1,5 @@
+appVersion: 2.1.0
+description: A Helm chart for XOS's "vRouter" service
+icon: https://guide.opencord.org/logos/cord.svg
+name: vrouter
+version: 2.1.0
