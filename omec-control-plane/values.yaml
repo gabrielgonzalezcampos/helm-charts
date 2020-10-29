@@ -111,8 +111,8 @@ config:
           staticAddr: 0.0.0.0
       staticusers2:
         - imsi: "208014567891202"
-            msisdn: "1122334456"
-            staticAddr: 0.0.0.0
+          msisdn: "1122334456"
+          staticAddr: 0.0.0.0
       mmes:
         - id: 1
           isdn: "19136246000"
