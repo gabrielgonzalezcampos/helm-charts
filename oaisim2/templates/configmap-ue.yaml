@@ -52,7 +52,16 @@ data:
       FPLMN_LIST = ();
       EHPLMN_LIST= ();
     };
-    UE1: {
+  ue_comac_test2.conf: |
+    PLMN: {
+      PLMN0: {
+             FULLNAME={{ .Values.config.plmn.name | quote }};
+             SHORTNAME={{ .Values.config.plmn.short_name | quote }};
+             MCC={{ .Values.config.plmn.mcc | quote }};
+             MNC={{ .Values.config.plmn.mnc | quote }};
+      };
+    };
+    UE0: {
       USER: {
             IMEI="356113022094150";
             MANUFACTURER="OAISIM";
@@ -118,7 +127,13 @@ data:
     );
   ue-gen-usim.sh: |
 {{ tuple "bin/_ue-gen-usim.sh.tpl" . | include "oaisim.template" | indent 4 }}
+  ue-gen-usim2.sh: |
+{{ tuple "bin/_ue-gen-usim2.sh.tpl" . | include "oaisim.template" | indent 4 }}
   ue-init.sh: |
 {{ tuple "bin/_ue-init.sh.tpl" . | include "oaisim.template" | indent 4 }}
+  ue-init2.sh: |
+{{ tuple "bin/_ue-init2.sh.tpl" . | include "oaisim.template" | indent 4 }}
   ue-run.sh: |
 {{ tuple "bin/_ue-run.sh.tpl" . | include "oaisim.template" | indent 4 }}
+  ue-run2.sh: |
+{{ tuple "bin/_ue-run2.sh.tpl" . | include "oaisim.template" | indent 4 }}

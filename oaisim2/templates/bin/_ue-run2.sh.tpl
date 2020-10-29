@@ -1,3 +1,5 @@
+#!/bin/bash
+#
 # Copyright 2019-present Open Networking Foundation
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -12,8 +14,25 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-apiVersion: v1
-appVersion: "1.0"
-description: openairinterface5g eNB and UE
-name: oaisim
-version: 0.1.3
+set -ex
+
+COMMAND="${@:-start}"
+
+function start () {
+  cd /openairinterface5g/cmake_targets
+  cp /opt/oaisim/ue/config/nfapi.conf /etc/oaisim/ue/nfapi.conf
+
+  # Copy USIM data
+  cp /etc/oaisim/ue/.u* .
+  cp /etc/oaisim/ue/.u* ./lte_build_oai/build/
+
+  # De moment deixo el UE2 sense funcionar ja que peta el UE1
+  exec ./lte_build_oai/build/lte-uesoftmodem -O /etc/oaisim/ue/nfapi.conf --L2-emul 3 --num-ues 1 --nums_ue_thread 1
+}
+
+function stop () {
+  # TODO: clean up ip tables and rules
+  kill -TERM 1
+}
+
+$COMMAND

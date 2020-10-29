@@ -27,6 +27,9 @@ nodeSelectors:
   ue:
     label: oaisim
     value: enabled
+  ue2:
+    label: oaisim
+    value: enabled
 
 config:
   # 1 PLMN is supported for now
