@@ -109,6 +109,7 @@ config:
         - imsi: "208014567891201"
           msisdn: "1122334455"
           staticAddr: 0.0.0.0
+      staticusers2:
         - imsi: "208014567891202"
             msisdn: "1122334456"
             staticAddr: 0.0.0.0
