@@ -20,7 +20,7 @@ COMMAND="${@:-start}"
 
 function start () {
   cd /openairinterface5g/cmake_targets
-  cp /opt/oaisim/ue/config/nfapi.conf /etc/oaisim/ue/nfapi.conf
+  cp /opt/oaisim/ue/config/nfapi2.conf /etc/oaisim/ue/nfapi.conf
 
   # Copy USIM data
   cp /etc/oaisim/ue/.u* .
