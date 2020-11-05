@@ -64,7 +64,7 @@ spec:
             - name: DEPENDENCY_POD_JSON
               value: '[{"labels": {"app": "enb"}, "requireSameNode": true}]'
             - name: DEPENDENCY_JOBS
-              value: ue-setup-if2
+              value: ue-setup-if
           command:
             - kubernetes-entrypoint
           volumeMounts:
