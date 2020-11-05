@@ -19,12 +19,12 @@ set -ex
 LTE_IF=oip2
 
 ip link set $LTE_IF up
-if ! grep -q lte /etc/iproute2/rt_tables; then
-  echo "200 lte " >> /etc/iproute2/rt_tables
+if ! grep -q lte2 /etc/iproute2/rt_tables; then
+  echo "200 lte2 " >> /etc/iproute2/rt_tables
 fi
 
-ip rule add fwmark 1 table lte
-ip route add default dev $LTE_IF table lte || true
+ip rule add fwmark 1 table lte2
+ip route add default dev $LTE_IF table lte2 || true
 
 # enable inet6 for lo interface
 # lte-uesoftmodem uses AF_INET6 for UDP socket
