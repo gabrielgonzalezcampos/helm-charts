@@ -52,6 +52,7 @@ data:
       FPLMN_LIST = ();
       EHPLMN_LIST= ();
     };
+
   nfapi.conf: |
     log_config = {
       global_log_level                      ="info";
@@ -96,28 +97,9 @@ data:
         max_rxgain                    = 125;
       }
     );
-
-    RUs = (
-      {
-        local_rf       = "yes"
-        nb_tx          = 1
-        nb_rx          = 1
-        att_tx         = 90
-        att_rx         = 0;
-        bands          = [7,38,42,43];
-        max_pdschReferenceSignalPower = -27;
-        max_rxgain                    = 125;
-      }
-    );
   ue-gen-usim.sh: |
 {{ tuple "bin/_ue-gen-usim.sh.tpl" . | include "oaisim.template" | indent 4 }}
-  ue-gen-usim2.sh: |
-{{ tuple "bin/_ue-gen-usim2.sh.tpl" . | include "oaisim.template" | indent 4 }}
   ue-init.sh: |
 {{ tuple "bin/_ue-init.sh.tpl" . | include "oaisim.template" | indent 4 }}
-  ue-init2.sh: |
-{{ tuple "bin/_ue-init2.sh.tpl" . | include "oaisim.template" | indent 4 }}
   ue-run.sh: |
 {{ tuple "bin/_ue-run.sh.tpl" . | include "oaisim.template" | indent 4 }}
-  ue-run2.sh: |
-{{ tuple "bin/_ue-run2.sh.tpl" . | include "oaisim.template" | indent 4 }}

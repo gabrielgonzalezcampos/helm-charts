@@ -16,16 +16,22 @@
 
 set -ex
 
-LTE_IF=oip2
+COMMAND="${@:-start}"
 
-ip link set $LTE_IF up
-if ! grep -q lte /etc/iproute2/rt_tables; then
-  echo "200 lte " >> /etc/iproute2/rt_tables
-fi
+function start () {
+  cd /openairinterface5g/cmake_targets
+  cp /opt/oaisim/ue/config/nfapi.conf /etc/oaisim/ue/nfapi.conf
 
-ip rule add fwmark 1 table lte
-ip route add default dev $LTE_IF table lte || true
+  # Copy USIM data
+  cp /etc/oaisim/ue/.u* .
+  cp /etc/oaisim/ue/.u* ./lte_build_oai/build/
 
-# enable inet6 for lo interface
-# lte-uesoftmodem uses AF_INET6 for UDP socket
-echo 0 > /proc/sys/net/ipv6/conf/lo/disable_ipv6
+  exec ./lte_build_oai/build/lte-uesoftmodem -O /etc/oaisim/ue/nfapi.conf --L2-emul 3 --num-ues {{ .Values.config.ue.num_ues }} --nums_ue_thread {{ .Values.config.ue.num_ues }}
+}
+
+function stop () {
+  # TODO: clean up ip tables and rules
+  kill -TERM 1
+}
+
+$COMMAND

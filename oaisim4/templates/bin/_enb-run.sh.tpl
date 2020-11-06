@@ -15,22 +15,16 @@
 # limitations under the License.
 
 set -ex
-
 COMMAND="${@:-start}"
 
 function start () {
   cd /openairinterface5g/cmake_targets
-  cp /opt/oaisim/ue/config/nfapi.conf /etc/oaisim/ue/nfapi.conf
 
-  # Copy USIM data
-  cp /etc/oaisim/ue/.u* .
-  cp /etc/oaisim/ue/.u* ./lte_build_oai/build/
-
-  exec ./lte_build_oai/build/lte-uesoftmodem -O /etc/oaisim/ue/nfapi.conf --L2-emul 3 --num-ues 2 --nums_ue_thread 1
+  cat /etc/oaisim/enb/nfapi.conf
+  exec ./lte_build_oai/build/lte-softmodem -O /etc/oaisim/enb/nfapi.conf
 }
 
 function stop () {
-  # TODO: clean up ip tables and rules
   kill -TERM 1
 }
 
