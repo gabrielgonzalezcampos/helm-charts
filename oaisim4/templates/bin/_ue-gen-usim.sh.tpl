@@ -23,7 +23,7 @@ gen_nvram_path=/etc/oaisim/ue
 #Add users config
 for i in {1..{{ .Values.config.ue.num_ues }}..1}
 do
-cat >> conf_nvram_path << EOF
+cat >> /opt/oaisim/ue/config/ue_comac_test2.conf << EOF
 UE1: {
 USER: {
 IMEI="356113022094150";
@@ -37,9 +37,9 @@ USIM_API_K={{ .Values.config.ue2.sim.api_key | quote }};
 OPC={{ .Values.config.ue2.sim.opc | quote }};
 MSISDN={{ .Values.config.ue2.sim.msisdn | quote }};
 };
-HPLMN= {{ $plmn }};
+HPLMN= {{ "$plmn" }};
 UCPLMN_LIST = ();
-OPLMN_LIST = ({{ $plmn }});
+OPLMN_LIST = ({{ "$plmn" }});
 OCPLMN_LIST = ();
 FPLMN_LIST = ();
 EHPLMN_LIST= ();
