@@ -16,10 +16,16 @@
 
 set -ex
 
-# Generate USIM data
-conf_nvram_path=/opt/oaisim/ue/config/ue_comac_test.conf
-gen_nvram_path=/etc/oaisim/ue
+LTE_IF=oip1
 
-cd /openairinterface5g/cmake_targets
-./nvram --gen -c $conf_nvram_path -o $gen_nvram_path
-./usim --gen -c $conf_nvram_path -o $gen_nvram_path
+ip link set $LTE_IF up
+if ! grep -q lte /etc/iproute2/rt_tables; then
+  echo "200 lte " >> /etc/iproute2/rt_tables
+fi
+
+ip rule add fwmark 1 table lte
+ip route add default dev $LTE_IF table lte || true
+
+# enable inet6 for lo interface
+# lte-uesoftmodem uses AF_INET6 for UDP socket
+echo 0 > /proc/sys/net/ipv6/conf/lo/disable_ipv6

@@ -52,26 +52,8 @@ data:
       FPLMN_LIST = ();
       EHPLMN_LIST= ();
     };
-    UE1: {
-          USER: {
-                IMEI="356113022094150";
-                MANUFACTURER="OAISIM";
-                MODEL="OAISIM";
-                PIN="0000";
-          };
-          SIM: {
-               MSIN={{ .Values.config.ue2.sim.msin | quote }};
-               USIM_API_K={{ .Values.config.ue2.sim.api_key | quote }};
-               OPC={{ .Values.config.ue2.sim.opc | quote }};
-               MSISDN={{ .Values.config.ue2.sim.msisdn | quote }};
-          };
-          HPLMN= {{ $plmn }};
-          UCPLMN_LIST = ();
-          OPLMN_LIST = ({{ $plmn }});
-          OCPLMN_LIST = ();
-          FPLMN_LIST = ();
-          EHPLMN_LIST= ();
-        };
+  ue_comac_test2.conf: |
+
   nfapi.conf: |
     log_config = {
       global_log_level                      ="info";

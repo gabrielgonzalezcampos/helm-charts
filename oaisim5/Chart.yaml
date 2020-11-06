@@ -1,5 +1,3 @@
-#!/bin/bash
-#
 # Copyright 2019-present Open Networking Foundation
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,12 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-set -ex
-
-# Generate USIM data
-conf_nvram_path=/opt/oaisim/ue/config/ue_comac_test.conf
-gen_nvram_path=/etc/oaisim/ue
-
-cd /openairinterface5g/cmake_targets
-./nvram --gen -c $conf_nvram_path -o $gen_nvram_path
-./usim --gen -c $conf_nvram_path -o $gen_nvram_path
+apiVersion: v1
+appVersion: "1.0"
+description: openairinterface5g eNB and UE
+name: oaisim
+version: 0.1.3

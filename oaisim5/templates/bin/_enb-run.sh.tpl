@@ -15,11 +15,17 @@
 # limitations under the License.
 
 set -ex
+COMMAND="${@:-start}"
 
-# Generate USIM data
-conf_nvram_path=/opt/oaisim/ue/config/ue_comac_test.conf
-gen_nvram_path=/etc/oaisim/ue
+function start () {
+  cd /openairinterface5g/cmake_targets
 
-cd /openairinterface5g/cmake_targets
-./nvram --gen -c $conf_nvram_path -o $gen_nvram_path
-./usim --gen -c $conf_nvram_path -o $gen_nvram_path
+  cat /etc/oaisim/enb/nfapi.conf
+  exec ./lte_build_oai/build/lte-softmodem -O /etc/oaisim/enb/nfapi.conf
+}
+
+function stop () {
+  kill -TERM 1
+}
+
+$COMMAND

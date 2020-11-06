@@ -16,10 +16,13 @@
 
 set -ex
 
-# Generate USIM data
-conf_nvram_path=/opt/oaisim/ue/config/ue_comac_test.conf
-gen_nvram_path=/etc/oaisim/ue
+cp /opt/oaisim/enb/config/nfapi.conf /etc/oaisim/enb/nfapi.conf
 
-cd /openairinterface5g/cmake_targets
-./nvram --gen -c $conf_nvram_path -o $gen_nvram_path
-./usim --gen -c $conf_nvram_path -o $gen_nvram_path
+S1_MME_IFACE={{ .Values.config.enb.networks.s1_mme.interface }}
+S1_MME_IP=$(ip addr show $S1_MME_IFACE | grep inet | grep -v inet6 | awk '{print $2}' | cut -d'/' -f1)
+sed -i "s/S1_MME_IP_ADDRESS/\"$S1_MME_IP\"/g" /etc/oaisim/enb/nfapi.conf
+
+S1U_IFACE={{ .Values.config.enb.networks.s1u.interface }}
+S1U_IP=$(ip addr show $S1U_IFACE | grep inet | grep -v inet6 | awk '{print $2}' | cut -d'/' -f1)
+sed -i "s/S1U_IP_ADDRESS/\"$S1U_IP\"/g" /etc/oaisim/enb/nfapi.conf
+sed -i "s/X2C_IP_ADDRESS/\"$ENB_LOCAL_IP\"/g" /etc/oaisim/enb/nfapi.conf

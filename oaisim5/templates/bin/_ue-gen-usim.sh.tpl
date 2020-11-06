@@ -20,6 +20,31 @@ set -ex
 conf_nvram_path=/opt/oaisim/ue/config/ue_comac_test.conf
 gen_nvram_path=/etc/oaisim/ue
 
+#Add users config
+cat >> /opt/oaisim/ue/config/ue_comac_test2.conf << EOF
+UE1: {
+USER: {
+IMEI="356113022094150";
+MANUFACTURER="OAISIM";
+MODEL="OAISIM";
+PIN="0000";
+};
+SIM: {
+MSIN={{ .Values.config.ue2.sim.msin | quote }};
+USIM_API_K={{ .Values.config.ue2.sim.api_key | quote }};
+OPC={{ .Values.config.ue2.sim.opc | quote }};
+MSISDN={{ .Values.config.ue2.sim.msisdn | quote }};
+};
+HPLMN= {{ "$plmn" }};
+UCPLMN_LIST = ();
+OPLMN_LIST = ({{ "$plmn" }});
+OCPLMN_LIST = ();
+FPLMN_LIST = ();
+EHPLMN_LIST= ();
+};
+EOF
+
+
 cd /openairinterface5g/cmake_targets
 ./nvram --gen -c $conf_nvram_path -o $gen_nvram_path
 ./usim --gen -c $conf_nvram_path -o $gen_nvram_path
