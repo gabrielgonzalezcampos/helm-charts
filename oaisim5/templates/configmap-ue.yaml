@@ -15,7 +15,7 @@ limitations under the License.
 */}}
 
 {{- $plmn := tuple .Values.config.plmn.mcc .Values.config.plmn.mnc | include "oaisim.plmn" | quote -}}
-{{- range $i,$junk := until (.Values.config.oai.num_ues|int) }}
+#{{- range $i,$junk := until (.Values.config.oai.num_ues|int) }}
 ---
 apiVersion: v1
 kind: ConfigMap
@@ -35,16 +35,16 @@ data:
     };
     UE{{ $i }}: {
       USER: {
-            IMEI={{.Values.config.oaisim.ue0.imei | quote }};
+            IMEI={{.Values.config.oai.ue0.imei | quote }};
             MANUFACTURER="OAISIM";
             MODEL="OAISIM";
             PIN="0000";
       };
       SIM: {
-           MSIN={{.Values.config.oaisim.ue0.sim.msin | quote }};
+           MSIN={{.Values.config.oai.ue0.sim.msin | quote }};
            USIM_API_K={{.Values.config.oai.ue0.sim.api_key | quote }};
-           OPC={{.Values.config.oaisim.ue0.sim.api_opc | quote }};
-           MSISDN={{.Values.config.oaisim.ue0.sim.msisdn | quote }};
+           OPC={{.Values.config.oai.ue0.sim.api_opc | quote }};
+           MSISDN={{.Values.config.oai.ue0.sim.msisdn | quote }};
       };
       HPLMN= {{ $plmn }};
       UCPLMN_LIST = ();
@@ -103,4 +103,4 @@ data:
 {{ tuple "bin/_ue-init.sh.tpl" . | include "oaisim.template" | indent 4 }}
   ue-run.sh: |
 {{ tuple "bin/_ue-run.sh.tpl" . | include "oaisim.template" | indent 4 }}
-{{- end }}
+#{{- end }}
