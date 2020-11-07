@@ -34,9 +34,9 @@ data:
     };
     {{- $root := . -}}
     {{- range $i, $junk := until (.Values.config.oai.num_ues|int) }}
-    UE0: {
+    UE{{$i}}: {
       USER: {
-            IMEI={{$root.Values.config.oai.ue0.device.imei | quote }};
+            IMEI={{ index (printf "$root.Values.config.oai.ue%s.device.imei" $i) | quote }};
             MANUFACTURER="OAISIM";
             MODEL="OAISIM";
             PIN="0000";
