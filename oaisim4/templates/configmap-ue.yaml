@@ -32,7 +32,8 @@ data:
              MNC={{ .Values.config.plmn.mnc | quote }};
       };
     };
-    UE0: {
+    {{- range .Values.config.oai.ues}}
+    UE{{.ue}}: {
       USER: {
             IMEI="356113022094149";
             MANUFACTURER="OAISIM";
@@ -40,10 +41,10 @@ data:
             PIN="0000";
       };
       SIM: {
-           MSIN={{ .Values.config.oai.ue0.sim.msin | quote }};
-           USIM_API_K={{ .Values.config.oai.ue0.sim.api_key | quote }};
-           OPC={{ .Values.config.oai.ue0.sim.opc | quote }};
-           MSISDN={{ .Values.config.oai.ue0.sim.msisdn | quote }};
+            MSIN={{.msin | quote }};
+            USIM_API_K={{.api_key | quote }};
+            OPC={{.opc | quote }};
+            MSISDN={{.msisdn | quote }};
       };
       HPLMN= {{ $plmn }};
       UCPLMN_LIST = ();
@@ -52,6 +53,7 @@ data:
       FPLMN_LIST = ();
       EHPLMN_LIST= ();
     };
+    {{- end }}
   nfapi.conf: |
     log_config = {
       global_log_level                      ="info";
