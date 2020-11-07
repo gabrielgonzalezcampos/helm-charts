@@ -51,7 +51,7 @@ config:
         interface: enb
         port: 2152
   oaisim:
-    num_ues: 2
+    num_ues: 1
     ue0:
       imei: "356113022094149"
       sim:
