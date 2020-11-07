@@ -33,11 +33,10 @@ data:
       };
     };
     {{- $root := . -}}
-    {{- $uecount := (.Values.config.oai.num_ues|int)}}
-    {{- range $j, $junk1 := until ($uecount) }}
+    {{- range $i, $junk := until (.Values.config.oai.num_ues|int) }}
     UE0: {
       USER: {
-            IMEI="356113022094149";
+            IMEI={{$root.Values.config.oai.ue0.device.imei | quote }};
             MANUFACTURER="OAISIM";
             MODEL="OAISIM";
             PIN="0000";
