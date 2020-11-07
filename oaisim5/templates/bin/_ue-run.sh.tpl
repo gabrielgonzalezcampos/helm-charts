@@ -22,12 +22,12 @@ function start () {
   cd /openairinterface5g/cmake_targets
   cp /opt/oaisim/ue/config/nfapi.conf /etc/oaisim/ue/nfapi.conf
 
+
   # Copy USIM data
   cp /etc/oaisim/ue/.u* .
   cp /etc/oaisim/ue/.u* ./lte_build_oai/build/
 
-  #exec ./lte_build_oai/build/lte-uesoftmodem -O /etc/oaisim/ue/nfapi.conf --L2-emul 3 --num-ues {{ .Values.config.ue.num_ues }} --nums_ue_thread {{ .Values.config.ue.num_ues }}
-  exec ./lte_build_oai/build/lte-uesoftmodem -O /etc/oaisim/ue/nfapi.conf --L2-emul 3 --num-ues {{ .Values.config.ue.num_ues }} --nums_ue_thread {{ .Values.config.ue.num_ues }}
+  exec ./lte_build_oai/build/lte-uesoftmodem -O /etc/oaisim/ue/nfapi.conf --L2-emul 3 --num-ues {{ .Values.config.oaisim.num_ues }} --nums_ue_thread {{ .Values.config.ue.num_ues }}
 }
 
 function stop () {
