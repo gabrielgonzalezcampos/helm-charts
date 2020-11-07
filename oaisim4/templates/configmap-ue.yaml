@@ -41,7 +41,7 @@ data:
       };
       SIM: {
            MSIN={{ .Values.config.oai.ue0.sim.msin | quote }};
-           USIM_API_K={{ .Values.config.oai.ue0.api_key | quote }};
+           USIM_API_K={{ .Values.config.oai.ue0.sim.api_key | quote }};
            OPC={{ .Values.config.oai.ue0.sim.opc | quote }};
            MSISDN={{ .Values.config.oai.ue0.sim.msisdn | quote }};
       };
