@@ -42,10 +42,10 @@ data:
             PIN="0000";
       };
       SIM: {
-           MSIN={{$root.Values.config.oai.ue0.sim.msin | quote }};
-           USIM_API_K={{$root.Values.config.oai.ue0.sim.api_key | quote }};
-           OPC={{$root.Values.config.oai.ue0.sim.opc | quote }};
-           MSISDN={{$root.Values.config.oai.ue0.sim.msisdn | quote }};
+           MSIN={{ index (printf "$root.Values.config.oai.ue%s.sim.msin" $i) | quote }};
+           USIM_API_K={{ index (printf "$root.Values.config.oai.ue%s.sim.api_key" $i) | quote }};
+           OPC={{ index (printf "$root.Values.config.oai.ue%s.sim.opc" $i) | quote }};
+           MSISDN={{ index (printf "$root.Values.config.oai.ue%s.sim.msisdn" $i) | quote }};
       };
       HPLMN= {{ $plmn }};
       UCPLMN_LIST = ();
