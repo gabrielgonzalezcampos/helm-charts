@@ -19,7 +19,7 @@ set -ex
 # Generate USIM data
 conf_nvram_path=/opt/oaisim/ue/config/ue_comac_test.conf
 gen_nvram_path=/etc/oaisim/ue
-cd /openairinterface5g/cmake_targets
 
-./nvram --gen -c $conf_nvram_path.conf -o $gen_nvram_path
-./usim --gen -c $ue_comac_test.conf -o $gen_nvram_path
+cd /openairinterface5g/cmake_targets
+./nvram --gen -c $conf_nvram_path -o $gen_nvram_path
+./usim --gen -c $conf_nvram_path -o $gen_nvram_path

@@ -35,16 +35,16 @@ data:
     };
     UE{{ $i }}: {
       USER: {
-            IMEI={{'.Values.config.oaisim.ue' + i + '.imei' | quote }};
+            IMEI={{'.Values.config.oaisim.ue' + $i + '.imei' | quote }};
             MANUFACTURER="OAISIM";
             MODEL="OAISIM";
             PIN="0000";
       };
       SIM: {
-           MSIN={{ '.Values.config.oaisim.ue' + i + '.sim.msin' | quote }};
-           USIM_API_K={{'.Values.config.oaisim.ue' + i + '.sim.api_key' | quote }};
-           OPC={{'.Values.config.oaisim.ue' + i + '.sim.api_opc' | quote }};
-           MSISDN={{'.Values.config.oaisim.ue' + i + '.sim.msisdn' | quote }};
+           MSIN={{ '.Values.config.oaisim.ue' + $i + '.sim.msin' | quote }};
+           USIM_API_K={{'.Values.config.oaisim.ue' + $i + '.sim.api_key' | quote }};
+           OPC={{'.Values.config.oaisim.ue' + $i + '.sim.api_opc' | quote }};
+           MSISDN={{'.Values.config.oaisim.ue' + $i + '.sim.msisdn' | quote }};
       };
       HPLMN= {{ $plmn }};
       UCPLMN_LIST = ();
