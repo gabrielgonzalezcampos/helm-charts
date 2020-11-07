@@ -26,7 +26,7 @@ function start () {
   cp /etc/oaisim/ue/.u* .
   cp /etc/oaisim/ue/.u* ./lte_build_oai/build/
 
-exec ./lte_build_oai/build/lte-uesoftmodem -O /etc/oaisim/ue/nfapi.conf --L2-emul 3 --num-ues {{ .Values.config.ue.num_ues }} --nums_ue_thread {{ .Values.config.ue.num_ues }}
+exec ./lte_build_oai/build/lte-uesoftmodem -O /etc/oaisim/ue/nfapi.conf --L2-emul 3 --num-ues {{ .Values.config.oai.num_ues }} --nums_ue_thread {{ .Values.config.oai.num_ues }}
 }
 
 function stop () {

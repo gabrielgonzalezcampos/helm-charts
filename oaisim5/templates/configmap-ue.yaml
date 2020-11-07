@@ -33,18 +33,18 @@ data:
              MNC={{ .Values.config.plmn.mnc | quote }};
       };
     };
-    UE{{ $i }}: {
+    UE0: {
       USER: {
-            IMEI={{.Values.config.oai.ue0.imei | quote }};
+            IMEI={{ .Values.config.oai.ue0.imei | quote }};
             MANUFACTURER="OAISIM";
             MODEL="OAISIM";
             PIN="0000";
       };
       SIM: {
-           MSIN={{.Values.config.oai.ue0.sim.msin | quote }};
-           USIM_API_K={{.Values.config.oai.ue0.sim.api_key | quote }};
-           OPC={{.Values.config.oai.ue0.sim.api_opc | quote }};
-           MSISDN={{.Values.config.oai.ue0.sim.msisdn | quote }};
+           MSIN={{ .Values.config.oai.ue0.sim.msin | quote }};
+           USIM_API_K={{ .Values.config.oai.ue0.sim.api_key | quote }};
+           OPC={{ .Values.config.oai.ue0.sim.opc | quote }};
+           MSISDN={{ .Values.config.oai.ue0.sim.msisdn | quote }};
       };
       HPLMN= {{ $plmn }};
       UCPLMN_LIST = ();

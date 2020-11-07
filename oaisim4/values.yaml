@@ -50,16 +50,19 @@ config:
         # Provide the interface used for S1U network.
         interface: enb
         port: 2152
-  ue:
-    num_ues: 2
-    sim:
-      msin: "4567891201"
-      api_key: "465b5ce8b199b49faa5f0a2ee238a6bc"
-      opc: "d4416644f6154936193433dd20a0ace0"
-      msisdn: "1122334455"
-  ue2:
-    sim:
-      msin: "4567891202"
-      api_key: "465b5ce8b199b49faa5f0a2ee238a6bc"
-      opc: "d4416644f6154936193433dd20a0ace0"
-      msisdn: "1122334456"
+  oai:
+    num_ues: 1
+    ue0:
+      imei: "356113022094149"
+      sim:
+        msin: "4567891201"
+        api_key: "465b5ce8b199b49faa5f0a2ee238a6bc"
+        opc: "d4416644f6154936193433dd20a0ace0"
+        msisdn: "1122334455"
+    ue1:
+      imei: "356113022094150"
+      sim:
+        msin: "4567891202"
+        api_key: "465b5ce8b199b49faa5f0a2ee238a6bc"
+        opc: "d4416644f6154936193433dd20a0ace0"
+        msisdn: "1122334456"
