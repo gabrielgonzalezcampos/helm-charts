@@ -35,7 +35,7 @@ data:
     {{- range .Values.config.oai.ues}}
     UE{{.ue}}: {
       USER: {
-            IMEI="356113022094149";
+            IMEI={{.imei | quote }};
             MANUFACTURER="OAISIM";
             MODEL="OAISIM";
             PIN="0000";
