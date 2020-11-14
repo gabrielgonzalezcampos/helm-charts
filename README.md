@@ -1,19 +1,14 @@
-# Helm charts for CORD
+# CORD Bachelor Degree Thesis
 
-This repo contains the helm charts for use in the [CORD](https://opencord.org/)
-and subsidiary projects.
+## Helm Charts
 
-Thes charts are published on: <https://charts.opencord.org/>
+Forked from [opencord/helm-charts](https://github.com/opencord/helm-charts). Added MultiUE support with OAISIM4 by indicating UE number and parameters at [values.yaml](https://github.com/marcllena/helm-charts/blob/master/oaisim4/values.yaml)
 
-Please see <https://guide.opencord.org/charts/helm.html> for more complete
-documentation.
+Changes made:
 
-## Changing charts
+* **OAISIM2**: Tried to add second UE with another OAI instance, failing to provide connectivity.
+* **OAISIM3**: Tried to add second UE in the same OAI instance, successful. Requires manual configuration of UE configmap.
+* **OAISIM4**: Final version, as UE configmap is created automatically.
+* **OMEC Control and Data Plane**: Hardcoded image tags to match CiaB Makefile 
 
-When you make changes to charts, please make sure of the following:
-
-1. Make sure the chart passes a strict lint with `helm lint --strict
-   <chartname>`.  The `scripts/helmlint.sh` will check all charts.
-
-2. When you modify a chart, you must increase the version in `Chart.yaml`. You
-   may also need to update other charts that depend on your chart.
+Marc Llena
