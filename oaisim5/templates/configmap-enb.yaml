@@ -247,7 +247,7 @@ data:
 {{ tuple "bin/_enb-init.sh.tpl" . | include "oaisim.template" | indent 4 }}
   enb-run.sh: |
 {{ tuple "bin/_enb-run.sh.tpl" . | include "oaisim.template" | indent 4 }}
-  enb-init2.sh: |
-{{ tuple "bin/_enb-init2.sh.tpl" . | include "oaisim.template" | indent 4 }}
-  enb-run2.sh: |
-{{ tuple "bin/_enb-run2.sh.tpl" . | include "oaisim.template" | indent 4 }}
+  enb2-init.sh: |
+{{ tuple "bin/_enb2-init.sh.tpl" . | include "oaisim.template" | indent 4 }}
+  enb2-run.sh: |
+{{ tuple "bin/_enb2-run.sh.tpl" . | include "oaisim.template" | indent 4 }}
