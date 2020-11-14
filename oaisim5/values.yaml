@@ -50,20 +50,20 @@ config:
         # Provide the interface used for S1U network.
         interface: enb
         port: 2152
-    enb2:
-      mme:
-        # Provide the IP address of MME.
-        # MME provies nodePort for eNB access, so 127.0.0.1 should work
-        # in most cases unless using external MME.
-        address: 127.0.0.1
-      networks:
-        s1_mme:
-          # Provide the interface used for S1_MME network.
-          interface: eno2
-        s1u:
-          # Provide the interface used for S1U network.
-          interface: enb2
-          port: 2153
+  enb2:
+    mme:
+      # Provide the IP address of MME.
+      # MME provies nodePort for eNB access, so 127.0.0.1 should work
+      # in most cases unless using external MME.
+      address: 127.0.0.1
+    networks:
+      s1_mme:
+        # Provide the interface used for S1_MME network.
+        interface: eno2
+      s1u:
+        # Provide the interface used for S1U network.
+        interface: enb2
+        port: 2153
   oai:
     num_ues: 3 # Number of UEs emulated with OAISIM
     ues:
