@@ -16,7 +16,7 @@
 
 set -ex
 
-cp /opt/oaisim/enb/config/nfapi.conf /etc/oaisim/enb/nfapi.conf
+cp /opt/oaisim/enb/config/nfapi2.conf /etc/oaisim/enb/nfapi2.conf
 
 S1_MME_IFACE={{ .Values.config.enb.networks.s1_mme.interface }}
 S1_MME_IP=$(ip addr show $S1_MME_IFACE | grep inet | grep -v inet6 | awk '{print $2}' | cut -d'/' -f1)
