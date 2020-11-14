@@ -59,11 +59,11 @@ config:
     networks:
       s1_mme:
         # Provide the interface used for S1_MME network.
-        interface: eno2
+        interface: eno
       s1u:
         # Provide the interface used for S1U network.
         interface: enb2
-        port: 2153
+        port: 2152
   oai:
     num_ues: 3 # Number of UEs emulated with OAISIM
     ues:

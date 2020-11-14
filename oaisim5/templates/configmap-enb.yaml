@@ -250,7 +250,7 @@ data:
     eNBs = (
       {
         ////////// Identification parameters:
-        eNB_ID    =  0xe01;
+        eNB_ID    =  0xe00;
         cell_type =  "CELL_MACRO_ENB";
         eNB_name  =  "eNB2-OAISIM-LTEBox";
 
@@ -278,7 +278,7 @@ data:
             eutra_band                                                      = 7;
             downlink_frequency                                              = 2685000000L;
             uplink_frequency_offset                                         = -120000000;
-            Nid_cell                                                        = 0;
+            Nid_cell                                                        = 1;
             N_RB_DL                                                         = 50;
             Nid_cell_mbsfn                                                  = 0;
             nb_antenna_ports                                                = 1;
@@ -417,7 +417,7 @@ data:
           ENB_INTERFACE_NAME_FOR_S1U               = {{ .Values.config.enb2.networks.s1u.interface | quote }};
           ENB_IPV4_ADDRESS_FOR_S1U                 = S1U_IP_ADDRESS;
           ENB_PORT_FOR_S1U                         = {{ .Values.config.enb2.networks.s1u.port }}; # Spec 2152
-          ENB_IPV4_ADDRESS_FOR_X2C                 = X2C_IP_ADDRESS;
+          X2C_IP_ADDRESS                           = X2C_IP_ADDRESS;
           ENB_PORT_FOR_X2C                         = 36422; # Spec 36422
         };
       }
