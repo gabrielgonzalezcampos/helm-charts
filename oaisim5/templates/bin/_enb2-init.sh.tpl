@@ -20,9 +20,9 @@ cp /opt/oaisim/enb/config/nfapi.conf /etc/oaisim/enb/nfapi.conf
 
 S1_MME_IFACE={{ .Values.config.enb.networks.s1_mme.interface }}
 S1_MME_IP=$(ip addr show $S1_MME_IFACE | grep inet | grep -v inet6 | awk '{print $2}' | cut -d'/' -f1)
-sed -i "s/S1_MME_IP_ADDRESS/\"$S1_MME_IP\"/g" /etc/oaisim/enb/nfapi.conf
+sed -i "s/S1_MME_IP_ADDRESS/\"$S1_MME_IP\"/g" /etc/oaisim/enb/nfapi2.conf
 
 S1U_IFACE={{ .Values.config.enb.networks.s1u.interface }}
 S1U_IP=$(ip addr show $S1U_IFACE | grep inet | grep -v inet6 | awk '{print $2}' | cut -d'/' -f1)
-sed -i "s/S1U_IP_ADDRESS/\"$S1U_IP\"/g" /etc/oaisim/enb/nfapi.conf
-sed -i "s/X2C_IP_ADDRESS/\"$ENB_LOCAL_IP\"/g" /etc/oaisim/enb/nfapi.conf
+sed -i "s/S1U_IP_ADDRESS/\"$S1U_IP\"/g" /etc/oaisim/enb/nfapi2.conf
+sed -i "s/X2C_IP_ADDRESS/\"$ENB_LOCAL_IP\"/g" /etc/oaisim/enb/nfapi2.conf

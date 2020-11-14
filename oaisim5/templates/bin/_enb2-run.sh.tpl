@@ -20,8 +20,8 @@ COMMAND="${@:-start}"
 function start () {
   cd /openairinterface5g/cmake_targets
 
-  cat /etc/oaisim/enb/nfapi.conf
-  exec ./lte_build_oai/build/lte-softmodem -O /etc/oaisim/enb/nfapi.conf
+  cat /etc/oaisim/enb/nfapi2.conf
+  exec ./lte_build_oai/build/lte-softmodem -O /etc/oaisim/enb/nfapi2.conf
 }
 
 function stop () {
