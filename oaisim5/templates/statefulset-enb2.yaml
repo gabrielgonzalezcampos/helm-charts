@@ -34,7 +34,7 @@ spec:
     spec:
     {{- if .Values.nodeSelectors.enabled }}
       nodeSelector:
-        {{ .Values.nodeSelectors.enb2.label }}: {{ .Values.nodeSelectors.enb2.value }}
+        {{ .Values.nodeSelectors.enb.label }}: {{ .Values.nodeSelectors.enb.value }}
     {{- end }}
       serviceAccountName: enb2
       hostNetwork: true
@@ -68,14 +68,14 @@ spec:
           volumeMounts:
             []
         - name: enb2-init
-          image: {{ .Values.images.tags.enb2 | quote }}
+          image: {{ .Values.images.tags.enb | quote }}
           imagePullPolicy: {{ .Values.images.pullPolicy }}
           securityContext:
             capabilities:
               add:
                 - NET_ADMIN
           command:
-            - /opt/oaisim/enb2/scripts/enb2-init.sh
+            - /opt/oaisim/enb/scripts/enb2-init.sh
           env:
             - name: enb2_LOCAL_IP
               valueFrom:
@@ -83,26 +83,26 @@ spec:
                   fieldPath: status.podIP
           volumeMounts:
             - name: script
-              mountPath: /opt/oaisim/enb2/scripts/enb2-init.sh
+              mountPath: /opt/oaisim/enb/scripts/enb2-init.sh
               subPath: enb2-init.sh
             - name: config
-              mountPath: /opt/oaisim/enb2/config
+              mountPath: /opt/oaisim/enb/config
             - name: pod-share
-              mountPath: /etc/oaisim/enb2
+              mountPath: /etc/oaisim/enb
       containers:
         - name: enb2
-          image: {{ .Values.images.tags.enb2 | quote }}
+          image: {{ .Values.images.tags.enb | quote }}
           imagePullPolicy: {{ .Values.images.pullPolicy }}
           securityContext:
             privileged: true
           command:
-            - /opt/oaisim/enb2/scripts/enb2-run.sh
+            - /opt/oaisim/enb/scripts/enb2-run.sh
             - start
           lifecycle:
             preStop:
               exec:
                 command:
-                  - /opt/oaisim/enb2/scripts/enb2-run.sh
+                  - /opt/oaisim/enb/scripts/enb2-run.sh
                   - stop
           env:
             - name: enb2_LOCAL_IP
@@ -111,10 +111,10 @@ spec:
                   fieldPath: status.podIP
           volumeMounts:
             - name: script
-              mountPath: /opt/oaisim/enb2/scripts/enb2-run.sh
+              mountPath: /opt/oaisim/enb/scripts/enb2-run.sh
               subPath: enb2-run.sh
             - name: pod-share
-              mountPath: /etc/oaisim/enb2
+              mountPath: /etc/oaisim/enb
       volumes:
         - name: config
           configMap:

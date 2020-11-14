@@ -247,3 +247,7 @@ data:
 {{ tuple "bin/_enb-init.sh.tpl" . | include "oaisim.template" | indent 4 }}
   enb-run.sh: |
 {{ tuple "bin/_enb-run.sh.tpl" . | include "oaisim.template" | indent 4 }}
+  enb-init2.sh: |
+{{ tuple "bin/_enb-init2.sh.tpl" . | include "oaisim.template" | indent 4 }}
+  enb-run2.sh: |
+{{ tuple "bin/_enb-run2.sh.tpl" . | include "oaisim.template" | indent 4 }}
