@@ -36,7 +36,7 @@ spec:
       nodeSelector:
         {{ .Values.nodeSelectors.enb2.label }}: {{ .Values.nodeSelectors.enb2.value }}
     {{- end }}
-      serviceAccountName: enb22
+      serviceAccountName: enb2
       hostNetwork: true
       initContainers:
         - name: enb2-dep-check
@@ -90,7 +90,7 @@ spec:
             - name: pod-share
               mountPath: /etc/oaisim/enb2
       containers:
-        - name: enb22
+        - name: enb2
           image: {{ .Values.images.tags.enb2 | quote }}
           imagePullPolicy: {{ .Values.images.pullPolicy }}
           securityContext:
@@ -118,11 +118,11 @@ spec:
       volumes:
         - name: config
           configMap:
-            name: enb2
+            name: enb
             defaultMode: 420
         - name: script
           configMap:
-            name: enb2
+            name: enb
             defaultMode: 493
         - name: pod-share
           emptyDir: {}
