@@ -13,9 +13,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-icon: https://guide.opencord.org/logos/cord.svg
 apiVersion: v1
-appVersion: 1.0.0
-description: A Helm chart for Mininet
-name: mininet
-version: 1.1.3
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}-configmap
+data:
+{{ (tpl (.Files.Glob "toposcripts/*").AsConfig .) | indent 2 }}
