@@ -115,19 +115,6 @@ provision_staticusers \
     $mme_realm \
     {{ .staticAddr }} 
 {{- end }}
-{{- range .Values.config.hss.bootstrap.staticusers2 }}
-provision_staticusers \
-    {{ .imsi }} \
-    {{ .msisdn }} \
-    {{ $.Values.config.hss.bootstrap.apn }} \
-    {{ $.Values.config.hss.bootstrap.key }} \
-    {{ $.Values.config.hss.bootstrap.opc }} \
-    {{ $.Values.config.hss.bootstrap.sqn }} \
-    {{ $.Values.config.hss.hssdb }} \
-    $mme_identity \
-    $mme_realm \
-    {{ .staticAddr }}
-{{- end }}
 
 {{- range .Values.config.hss.bootstrap.mmes }}
 provision_mme \
