@@ -1,0 +1,1067 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fcde112d-5766-4cd8-81c6-7bcb88048933" name="Default Changelist" comment="" />
+    <ignored path=".idea/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mininet-bmv2/toposcripts/topo_stratum.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/oaisim2/values.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="855">
+              <caret line="57" column="24" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/oaisim2/Chart.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/oaisim3/values.yaml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/oaisim3/Chart.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/oaisim4/values.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="659">
+              <caret line="71" column="47" lean-forward="true" selection-start-line="71" selection-start-column="47" selection-end-line="71" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/oaisim4/Chart.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="52" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/omec-control-plane/values.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1650">
+              <caret line="110" column="29" selection-start-line="110" selection-start-column="29" selection-end-line="110" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mininet/Chart.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mininet-bmv2/templates/_helpers.tpl">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Values</find>
+      <find>printf</find>
+      <find>810</find>
+      <find>provision_users</find>
+      <find>INSERT INTO</find>
+      <find>(imsi, msisdn</find>
+      <find>calie8473dde80d</find>
+      <find>e80d</find>
+      <find>192.168.168.209</find>
+      <find>service</find>
+      <find>enb</find>
+      <find>configma</find>
+      <find>init</find>
+      <find>.Values.config.enb2</find>
+      <find>.Values.config.enb</find>
+      <find>nfapi</find>
+      <find>Nid</find>
+      <find>$S1_MME_IFACE</find>
+      <find>2152</find>
+      <find>S1_MME_IP_ADDRESS</find>
+      <find>252</find>
+      <find>X2C_IP_ADDRESS</find>
+      <find>radius</find>
+      <find>SECRET</find>
+      <find>cups</find>
+      <find>2F8</find>
+      <find>192.168.252</find>
+      <find>run</find>
+      <find>staticusers2</find>
+      <find>mininet-stratum:50001</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>enb2</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/oaisim2/templates</dir>
+      <dir>$PROJECT_DIR$/oaisim</dir>
+      <dir>$PROJECT_DIR$/oaisim3</dir>
+      <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/oaisim2</dir>
+      <dir>$PROJECT_DIR$/omec-control-plane</dir>
+      <dir>$PROJECT_DIR$/oaisim4</dir>
+      <dir>$PROJECT_DIR$/oaisim5</dir>
+      <dir>$PROJECT_DIR$/</dir>
+      <dir>$PROJECT_DIR$/mininet</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/oaisim3/templates/bin/_ue-gen-usim2.sh.tpl" />
+        <option value="$PROJECT_DIR$/oaisim3/templates/statefulset-ue.yaml" />
+        <option value="$PROJECT_DIR$/oaisim3/templates/job-ue-setup-if2.yaml" />
+        <option value="$PROJECT_DIR$/oaisim3/templates/bin/_ue-init2.sh.tpl" />
+        <option value="$PROJECT_DIR$/oaisim3/templates/statefulset-ue2.yaml" />
+        <option value="$PROJECT_DIR$/oaisim3/templates/bin/_ue-run2.sh.tpl" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/oaisim2/templates/bin/_ue-gen-usim2.sh.tpl" />
+        <option value="$PROJECT_DIR$/oaisim2/templates/configmap-enb.yaml" />
+        <option value="$PROJECT_DIR$/oaisim2/values.yaml" />
+        <option value="$PROJECT_DIR$/oaisimue/values.yaml" />
+        <option value="$PROJECT_DIR$/oaisimue/templates/configmap-ue.yaml" />
+        <option value="$PROJECT_DIR$/oaisimue/templates/bin/_ue-init.sh.tpl" />
+        <option value="$PROJECT_DIR$/oaisimue/templates/bin/_ue-run.sh.tpl" />
+        <option value="$PROJECT_DIR$/oaisim3/templates/configmap-ue.yaml" />
+        <option value="$PROJECT_DIR$/oaisim3/templates/bin/_ue-run.sh.tpl" />
+        <option value="$PROJECT_DIR$/oaisim/values.yaml" />
+        <option value="$PROJECT_DIR$/oaisim2/templates/statefulset-ue2.yaml" />
+        <option value="$PROJECT_DIR$/oaisim2/templates/configmap-ue.yaml" />
+        <option value="$PROJECT_DIR$/omec-user-plane/values.yaml" />
+        <option value="$PROJECT_DIR$/oaisim2/templates/bin/_ue-run.sh.tpl" />
+        <option value="$PROJECT_DIR$/oaisim2/templates/bin/_ue-run2.sh.tpl" />
+        <option value="$PROJECT_DIR$/oaisim2/templates/bin/_ue-init2.sh.tpl" />
+        <option value="$PROJECT_DIR$/oaisim3/values.yaml" />
+        <option value="$PROJECT_DIR$/oaisim4/templates/statefulset-ue.yaml" />
+        <option value="$PROJECT_DIR$/ponsimv2/templates/onu.yaml" />
+        <option value="$PROJECT_DIR$/oaisim/templates/configmap-ue.yaml" />
+        <option value="$PROJECT_DIR$/oaisim4/templates/bin/_ue-gen-usim.sh.tpl" />
+        <option value="$PROJECT_DIR$/oaisim4/templates/bin/_ue-run.sh.tpl" />
+        <option value="$PROJECT_DIR$/oaisim5/templates/bin/_ue-run.sh.tpl" />
+        <option value="$PROJECT_DIR$/oaisim5/templates/bin/_ue-gen-usim.sh.tpl" />
+        <option value="$PROJECT_DIR$/ponsimv2/templates/olt.yaml" />
+        <option value="$PROJECT_DIR$/oaisim4/values.yaml" />
+        <option value="$PROJECT_DIR$/oaisim4/templates/configmap-ue.yaml" />
+        <option value="$PROJECT_DIR$/oaisim5/templates/statefulset-enb2.yaml" />
+        <option value="$PROJECT_DIR$/oaisim5/templates/bin/_enb2-run.sh.tpl" />
+        <option value="$PROJECT_DIR$/oaisim5/templates/bin/_enb2-init.sh.tpl" />
+        <option value="$PROJECT_DIR$/oaisim5/values.yaml" />
+        <option value="$PROJECT_DIR$/oaisim5/templates/configmap-enb.yaml" />
+        <option value="$PROJECT_DIR$/oaisim/templates/bin/_enb-init.sh.tpl" />
+        <option value="$PROJECT_DIR$/oaisim5/templates/configmap-ue.yaml" />
+        <option value="$PROJECT_DIR$/mininet/Chart.yaml" />
+        <option value="$PROJECT_DIR$/oaisim2/Chart.yaml" />
+        <option value="$PROJECT_DIR$/omec-control-plane/values.yaml" />
+        <option value="$PROJECT_DIR$/omec-control-plane/templates/bin/_hss-bootstrap.sh.tpl" />
+        <option value="$PROJECT_DIR$/oaisim3/Chart.yaml" />
+        <option value="$PROJECT_DIR$/oaisim4/Chart.yaml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1140" />
+    <option name="y" value="48" />
+    <option name="width" value="1524" />
+    <option name="height" value="1311" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="helm-charts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="helm-charts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="helm-charts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="helm-charts" type="462c0819:PsiDirectoryNode" />
+              <item name="oaisim2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="helm-charts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="helm-charts" type="462c0819:PsiDirectoryNode" />
+              <item name="oaisim2" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="helm-charts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="helm-charts" type="462c0819:PsiDirectoryNode" />
+              <item name="oaisim3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="helm-charts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="helm-charts" type="462c0819:PsiDirectoryNode" />
+              <item name="oaisim4" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="helm-charts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="helm-charts" type="462c0819:PsiDirectoryNode" />
+              <item name="oaisim5" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="helm-charts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="helm-charts" type="462c0819:PsiDirectoryNode" />
+              <item name="oaisim5" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="helm-charts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="helm-charts" type="462c0819:PsiDirectoryNode" />
+              <item name="oaisim5" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="helm-charts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="helm-charts" type="462c0819:PsiDirectoryNode" />
+              <item name="omec-control-plane" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="helm-charts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="helm-charts" type="462c0819:PsiDirectoryNode" />
+              <item name="omec-control-plane" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="helm-charts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="helm-charts" type="462c0819:PsiDirectoryNode" />
+              <item name="omec-user-plane" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="helm-charts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="helm-charts" type="462c0819:PsiDirectoryNode" />
+              <item name="ponsimv2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="helm-charts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="helm-charts" type="462c0819:PsiDirectoryNode" />
+              <item name="ponsimv2" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="helm-charts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="helm-charts" type="462c0819:PsiDirectoryNode" />
+              <item name="workflows" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="helm-charts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="helm-charts" type="462c0819:PsiDirectoryNode" />
+              <item name="workflows" type="462c0819:PsiDirectoryNode" />
+              <item name="att-workflow" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.customizations" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/oaisim3/templates/configmap-ue.yaml" />
+    <property name="two.files.diff.last.used.folder" value="$PROJECT_DIR$/oaisim4" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/oaisim5/templates" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/oaisim5/templates/bin" />
+      <recent name="$PROJECT_DIR$/oaisim5" />
+      <recent name="$PROJECT_DIR$/oaisim3/templates/bin" />
+      <recent name="$PROJECT_DIR$/oaisim3/templates" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fcde112d-5766-4cd8-81c6-7bcb88048933" name="Default Changelist" comment="" />
+      <created>1603488438177</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603488438177</updated>
+      <workItem from="1603488440499" duration="5401000" />
+      <workItem from="1603537572550" duration="469000" />
+      <workItem from="1603538054724" duration="1746000" />
+      <workItem from="1603653242775" duration="8329000" />
+      <workItem from="1603811585246" duration="8128000" />
+      <workItem from="1603907555560" duration="6000" />
+      <workItem from="1603907574960" duration="19000" />
+      <workItem from="1603907596417" duration="822000" />
+      <workItem from="1603989450101" duration="4833000" />
+      <workItem from="1604079061958" duration="9831000" />
+      <workItem from="1604144936349" duration="5246000" />
+      <workItem from="1604230649405" duration="3374000" />
+      <workItem from="1604500319177" duration="2064000" />
+      <workItem from="1604573904978" duration="6824000" />
+      <workItem from="1604664107905" duration="14088000" />
+      <workItem from="1604748599821" duration="15341000" />
+      <workItem from="1604797378737" duration="93000" />
+      <workItem from="1604862621053" duration="1704000" />
+      <workItem from="1604939216503" duration="1968000" />
+      <workItem from="1605010223546" duration="1065000" />
+      <workItem from="1605096702341" duration="1455000" />
+      <workItem from="1605376538237" duration="7370000" />
+      <workItem from="1605393539187" duration="892000" />
+      <workItem from="1605441272201" duration="1833000" />
+      <workItem from="1606225455580" duration="1296000" />
+      <workItem from="1606428257941" duration="171000" />
+      <workItem from="1606598545370" duration="34000" />
+      <workItem from="1607016918486" duration="2027000" />
+      <workItem from="1607096404637" duration="816000" />
+      <workItem from="1607294296525" duration="734000" />
+      <workItem from="1608047837216" duration="46000" />
+      <workItem from="1608048525673" duration="3118000" />
+      <workItem from="1608376892872" duration="3417000" />
+      <workItem from="1609004013004" duration="801000" />
+    </task>
+    <task id="LOCAL-00029" summary="Move nfapi2 to UE2">
+      <created>1604088786943</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1604088786943</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Desactivar UE1, i deixar UE2 amb Lo2">
+      <created>1604145085753</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1604145085754</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Add helm with one UE">
+      <created>1604168216472</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1604168216472</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Plca the two UEs in the same pod, OAISIM3">
+      <created>1604252008056</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1604252008056</updated>
+    </task>
+    <task id="LOCAL-00033" summary="OAISIM3 Working with 2 UEs on same pod">
+      <created>1604253809765</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1604253809765</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Add new UE-2 pod (OAISIM2)">
+      <created>1604585824758</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1604585824758</updated>
+    </task>
+    <task id="LOCAL-00035" summary="EU2 OAI Running (OAISIM2)">
+      <created>1604602190351</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1604602190351</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Correct OAISIM2 int">
+      <created>1604614923173</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1604614923173</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Try automated version for X UEs in OAISIM4">
+      <created>1604689118414</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1604689118414</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Oaisim4 with one user and cat another file">
+      <created>1604689798406</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1604689798406</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Backup de OAISIM">
+      <created>1604700847423</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1604700847423</updated>
+    </task>
+    <task id="LOCAL-00040" summary="OAISIM3 Final Work">
+      <created>1604700898576</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1604700898576</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Use num_ues in OAISIM4">
+      <created>1604701073642</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1604701073642</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Provar OAISIM5">
+      <created>1604708776905</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1604708776905</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Millorar OAISIM5">
+      <created>1604709303595</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1604709303595</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Provar loop OAISIM5">
+      <created>1604709784285</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1604709784285</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Cambiar oaisim per oai">
+      <created>1604710223275</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1604710223275</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Comentem bucle">
+      <created>1604710501730</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1604710501730</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Modify OAISIM4 (v1.1) and OAISIM5 (v1.2)">
+      <created>1604749425847</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1604749425847</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Correct indentation">
+      <created>1604750143296</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1604750143296</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Correct Gen USIM">
+      <created>1604750321667</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1604750321667</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Indentation ue-run script">
+      <created>1604750884971</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1604750884971</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Correct bug OAISIM4">
+      <created>1604751043203</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1604751043203</updated>
+    </task>
+    <task id="LOCAL-00052" summary="OAISIM4 Working with new chart">
+      <created>1604751427863</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1604751427863</updated>
+    </task>
+    <task id="LOCAL-00053" summary="OAISIM5 Working">
+      <created>1604751499294</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1604751499294</updated>
+    </task>
+    <task id="LOCAL-00054" summary="OAISIM5 Loop working, using root to access values">
+      <created>1604760149488</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1604760149488</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Get IMEI from charts">
+      <created>1604760900951</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1604760900951</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Obtain value depending on variable loop working">
+      <created>1604762136179</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1604762136179</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Finish loop in configmap for MultiUEs">
+      <created>1604779449954</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1604779449954</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Script to automate deployment of UEs working, migrating to OAISIM4">
+      <created>1604793363559</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1604793363560</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Set script to emulate 3 UEs by default in OAISIM4">
+      <created>1604794474906</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1604794474906</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Working! Comments in OAISIM4">
+      <created>1604962563642</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1604962563643</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Try MultieNB in OAISIM5">
+      <created>1605376756908</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1605376756908</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Correct OAISIM5">
+      <created>1605377838387</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1605377838387</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Work on MultieNB OAISIM5">
+      <created>1605378105869</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1605378105869</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Work on MultieNB OAISIM5">
+      <created>1605378299448</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1605378299448</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Work on MultieNB OAISIM5">
+      <created>1605378396278</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1605378396278</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Work on MultieNB OAISIM5 (Correct port 2152)">
+      <created>1605380490834</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1605380490834</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Work on MultieNB OAISIM5 (Correct indentation)">
+      <created>1605380646052</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1605380646052</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Work on MultieNB OAISIM5 (Try with nfapi2.conf)">
+      <created>1605388704107</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1605388704107</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Work on MultieNB OAISIM5 (Try with nfapi2.conf)">
+      <created>1605389017493</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1605389017493</updated>
+    </task>
+    <task id="LOCAL-00070" summary="Work on MultieNB OAISIM5 (Try with nfapi2.conf)">
+      <created>1605392122953</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1605392122953</updated>
+    </task>
+    <task id="LOCAL-00071" summary="Work on MultieNB OAISIM5 (Try with nfapi2.conf)">
+      <created>1605392203242</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1605392203242</updated>
+    </task>
+    <task id="LOCAL-00072" summary="Default OAISIM config">
+      <created>1605441330284</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1605441330284</updated>
+    </task>
+    <task id="LOCAL-00073" summary="Split Mininet and Mininet-BMv2 Charts">
+      <created>1608050380617</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1608050380618</updated>
+    </task>
+    <task id="LOCAL-00074" summary="OAISIM2 -&gt; UEs emulated through different interfaces try to establish EPS bearer on oip1. We go ahead with second approach (OAISIM3)">
+      <created>1608377100991</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1608377100991</updated>
+    </task>
+    <task id="LOCAL-00075" summary="Default OMEC configuration with 10 consecutive IMSIs and dynamic addresses">
+      <created>1608378352584</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1608378352584</updated>
+    </task>
+    <task id="LOCAL-00076" summary="OAISIM3 -&gt; 2 UE working on same instance. Requires manual configuration to emulate more subscribers (pending automation)">
+      <created>1608381866791</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1608381866791</updated>
+    </task>
+    <task id="LOCAL-00077" summary="OAISIM4 -&gt; Working, Configmap created automatically depending on the values configuration">
+      <created>1608382084007</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1608382084007</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="115361000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1140" y="48" width="1524" height="1311" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31039137" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32923833" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.25211507" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" visible="true" weight="0.319398" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Correct indentation" />
+    <MESSAGE value="Correct Gen USIM" />
+    <MESSAGE value="Indentation ue-run script" />
+    <MESSAGE value="Correct bug OAISIM4" />
+    <MESSAGE value="OAISIM4 Working with new chart" />
+    <MESSAGE value="OAISIM5 Working" />
+    <MESSAGE value="OAISIM5 Loop working, using root to access values" />
+    <MESSAGE value="Get IMEI from charts" />
+    <MESSAGE value="Obtain value depending on variable loop working" />
+    <MESSAGE value="Finish loop in configmap for MultiUEs" />
+    <MESSAGE value="Script to automate deployment of UEs working, migrating to OAISIM4" />
+    <MESSAGE value="Set script to emulate 3 UEs by default in OAISIM4" />
+    <MESSAGE value="Working! Comments in OAISIM4" />
+    <MESSAGE value="Try MultieNB in OAISIM5" />
+    <MESSAGE value="Correct OAISIM5" />
+    <MESSAGE value="Work on MultieNB OAISIM5" />
+    <MESSAGE value="Work on MultieNB OAISIM5 (Correct port 2152)" />
+    <MESSAGE value="Work on MultieNB OAISIM5 (Correct indentation)" />
+    <MESSAGE value="Work on MultieNB OAISIM5 (Try with nfapi2.conf)" />
+    <MESSAGE value="Default OAISIM config" />
+    <MESSAGE value="Split Mininet and Mininet-BMv2 Charts" />
+    <MESSAGE value="OAISIM2 -&gt; UEs emulated through different interfaces try to establish EPS bearer on oip1. We go ahead with second approach (OAISIM3)" />
+    <MESSAGE value="Default OMEC configuration with 10 consecutive IMSIs and dynamic addresses" />
+    <MESSAGE value="OAISIM3 -&gt; 2 UE working on same instance. Requires manual configuration to emulate more subscribers (pending automation)" />
+    <MESSAGE value="OAISIM4 -&gt; Working, Configmap created automatically depending on the values configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="OAISIM4 -&gt; Working, Configmap created automatically depending on the values configuration" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/omec-control-plane/templates/configmap-hss.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omec-control-plane/templates/configmap-mme.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oaisim/templates/bin/_ue-gen-usim.sh.tpl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oaisim/templates/bin/_ue-init.sh.tpl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oaisim/templates/bin/_ue-run.sh.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="18" lean-forward="true" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oaisim6/templates/bin/_ue-run.sh.tpl" />
+    <entry file="file://$PROJECT_DIR$/oaisim6/values.yaml" />
+    <entry file="file://$PROJECT_DIR$/oaisim/templates/configmap-enb.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2835">
+          <caret line="189" column="9" selection-start-line="189" selection-start-column="9" selection-end-line="189" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oaisim5/templates/bin/_ue-run.sh.tpl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oaisim/templates/statefulset-enb.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oaisim/templates/bin/_enb-init.sh.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="66" selection-start-line="26" selection-start-column="66" selection-end-line="26" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oaisim/templates/bin/_enb-run.sh.tpl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oaisim5/templates/bin/_enb2-init.sh.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oaisim5/values.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="915">
+          <caret line="61" column="22" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mininet-bmv2/toposcripts/topo_sdbng.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflows/att-workflow/values.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflows/att-workflow/requirements.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="13" selection-start-column="6" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflows/dt-workflow/values.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflows/tt-workflow/requirements.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflows/tt-workflow/values.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oaisim5/templates/bin/_enb-init.sh.tpl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oaisim3/templates/bin/_enb-run.sh.tpl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oaisim3/templates/bin/_ue-run.sh.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="38" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oaisim3/templates/bin/_ue-gen-usim.sh.tpl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oaisim3/templates/configmap-ue.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="64" column="27" selection-start-line="64" selection-start-column="27" selection-end-line="64" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oaisim5/templates/configmap-ue.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oaisim/templates/configmap-ue.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oaisim2/templates/configmap-ue.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1890">
+          <caret line="126" column="6" selection-start-line="126" selection-start-column="6" selection-end-line="126" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oaisim5/templates/configmap-enb.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4200">
+          <caret line="280" column="79" selection-start-line="280" selection-start-column="79" selection-end-line="280" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oaisim3/templates/bin/_ue-init.sh.tpl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oaisim3/templates/statefulset-enb.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oaisim3/templates/configmap-enb.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="21" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oaisim5/templates/bin/_enb2-run.sh.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="68" selection-start-line="23" selection-start-column="68" selection-end-line="23" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mininet-bmv2/.helmignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mininet-bmv2/values.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mininet-bmv2/Chart.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mininet-bmv2/templates/configmap.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mininet-bmv2/templates/deployment.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mininet-bmv2/templates/mn-stratum-service.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mininet/templates/_helpers.tpl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mininet/values.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mininet-bmv2/toposcripts/topo_stratum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oaisim2/values.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="57" column="24" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oaisim2/Chart.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oaisim3/values.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oaisim3/Chart.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oaisim4/Chart.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="52" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omec-control-plane/values.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1650">
+          <caret line="110" column="29" selection-start-line="110" selection-start-column="29" selection-end-line="110" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mininet/Chart.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mininet-bmv2/templates/_helpers.tpl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oaisim4/values.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="659">
+          <caret line="71" column="47" lean-forward="true" selection-start-line="71" selection-start-column="47" selection-end-line="71" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
