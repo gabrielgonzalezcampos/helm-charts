@@ -67,7 +67,7 @@ config:
         msisdn: "1122334456"
       - ue: 2
         imei: "356113022094151"
-        msin: "4567891203"
-        api_key: "465b5ce8b199b49faa5f0a2ee238a6bc"
-        opc: "d4416644f6154936193433dd20a0ace0"
-        msisdn: "1122334457"
+        msin: "4567891300"
+        api_key: "ac8b50666dbebc9195c860381c4ff9e2"
+        opc: "28ffe5d30d5f711804a0ea7dd17657b0"
+        msisdn: "34934137123"
