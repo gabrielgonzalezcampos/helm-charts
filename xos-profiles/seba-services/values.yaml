@@ -61,7 +61,7 @@ fabric:
   # Whether the fabric uses Stratum or not, and the corresponding ONOS apps
   # required to control the switch.
   stratum:
-    enabled: false
+    enabled: true
     # The ONOS driver to control the fabric switch
     driverAppId: "org.onosproject.drivers.barefoot"
     # Whether the app providing the pipeconf must be installed to ONOS from an

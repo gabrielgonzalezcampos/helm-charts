@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-apiVersion: apps/v1
+apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: xos-gui
@@ -21,10 +21,6 @@ metadata:
     {{- include "xos-gui.release_labels" . | indent 4 }}
 spec:
   replicas: 1
-  selector:
-    matchLabels:
-      name: xos-gui
-      release: {{ .Release.Name }}
   template:
     metadata:
       labels:

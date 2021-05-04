@@ -35,17 +35,13 @@ spec:
     protocol: TCP
 
 ---
-apiVersion: apps/v1
+apiVersion: apps/v1beta1
 kind: StatefulSet
 metadata:
   name: nginx-rtmp
 spec:
   serviceName: nginx-rtmp
   replicas: {{ .Values.nginx.replicas}}
-  selector:
-    matchLabels:
-      name: nginx-rtmp
-      release: {{ .Release.Name }}
   template:
     metadata:
       labels:
