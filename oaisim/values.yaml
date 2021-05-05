@@ -15,8 +15,8 @@
 images:
   tags:
     dep_check: quay.io/stackanetes/kubernetes-entrypoint:v0.3.1
-    enb: omecproject/lte-softmodem:1.0.0
-    ue: omecproject/lte-uesoftmodem:1.0.0
+    enb: omecproject/lte-softmodem:1.1.0
+    ue: omecproject/lte-uesoftmodem:1.1.0
   pullPolicy: IfNotPresent
 
 nodeSelectors:
@@ -48,7 +48,7 @@ config:
         interface: eno1
       s1u:
         # Provide the interface used for S1U network.
-        interface: enb
+        interface: s1u-enb
         port: 2152
   ue:
     # 1 UE is supported for now
@@ -56,4 +56,4 @@ config:
       msin: "4567891201"
       api_key: "465b5ce8b199b49faa5f0a2ee238a6bc"
       opc: "d4416644f6154936193433dd20a0ace0"
-      msisdn: "1122334455"
+      msisdn: "1122334456"

@@ -52,7 +52,22 @@ spec:
           image: '{{ tpl .Values.images.bbsim.registry . }}{{ tpl .Values.images.bbsim.repository . }}:{{ tpl ( tpl .Values.images.bbsim.tag . ) . }}'
           imagePullPolicy: {{ tpl .Values.images.bbsim.pullPolicy . }}
           securityContext:
-            privileged: true
+            privileged: {{ .Values.privileged }}
+          livenessProbe:
+            exec:
+              command:
+              - bbsimctl
+              - olt
+              - get
+            initialDelaySeconds: 5
+            periodSeconds: 30
+          readinessProbe:
+            httpGet:
+              path: /v2/cfg
+              port: {{ .Values.bbsim_sadis_port }}
+              httpHeaders:
+            initialDelaySeconds: 5
+            periodSeconds: 30
           command: [
             "/app/bbsim",
             "-openolt_address", ":{{ .Values.olt_tcp_port }}",
@@ -60,6 +75,7 @@ spec:
             "-nni", "{{ .Values.nni }}",
             "-pon", "{{ .Values.pon }}",
             "-onu", "{{ .Values.onu }}",
+            "-oltRebootDelay", "{{ .Values.oltRebootDelay }}",
             "-logLevel", "{{ $log_level }}",
             "-delay", "{{ .Values.delay }}",
             "-services", "configs/services.yaml",
@@ -92,6 +108,9 @@ spec:
               protocol: TCP
             - name: "bbsim-{{ .Values.olt_id }}-rest"
               containerPort: {{ .Values.bbsim_rest_port }}
+              protocol: TCP
+            - name: "bbsim-{{ .Values.olt_id }}-dmi"
+              containerPort: {{ .Values.bbsim_dmi_port }}
               protocol: TCP
           env:
             - name: POD_IP
