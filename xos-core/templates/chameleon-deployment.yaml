@@ -28,7 +28,8 @@ spec:
   template:
     metadata:
       labels:
-        app: {{ .Release.Name }}
+        app: xos-core
+        release: {{ .Release.Name }} 
     spec:
       containers:
         - name: xos-chameleon
