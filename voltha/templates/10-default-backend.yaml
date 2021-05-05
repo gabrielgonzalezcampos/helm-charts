@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-apiVersion: apps/v1
+apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: default-http-backend
@@ -22,10 +22,6 @@ metadata:
   namespace: {{ .Values.global.namespace }}
 spec:
   replicas: 1
-  selector:
-    matchLabels:
-      name: default-http-backend
-      release: {{ .Release.Name }}
   template:
     metadata:
       labels:
