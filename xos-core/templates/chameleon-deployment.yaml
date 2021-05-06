@@ -23,7 +23,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      name: xos-chameleon
+      app: xos-chameleon
       release: {{ .Release.Name }}
   template:
     metadata:
