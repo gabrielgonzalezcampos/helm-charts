@@ -27,7 +27,7 @@ spec:
    selector:
      matchLabels:
        app: ponsim
-       olt: olt{{ $i }}
+       rg: rg{{ $i }}-{{ $j }}
    template:
      metadata:
        labels:
