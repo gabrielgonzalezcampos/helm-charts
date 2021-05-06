@@ -29,7 +29,6 @@ spec:
     metadata:
       labels:
         app: xos-core
-        release: {{ .Release.Name }} 
     spec:
       containers:
         - name: xos-core
