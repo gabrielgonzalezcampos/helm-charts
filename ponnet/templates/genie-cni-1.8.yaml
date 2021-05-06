@@ -265,7 +265,8 @@ spec:
     - port: 443
       targetPort: 8000
   selector:
-    role: genie-network-admission-controller
+    matchLabels:
+        role: genie-network-admission-controller
 
 ---
 # Daemonset configuration for geine network policy
