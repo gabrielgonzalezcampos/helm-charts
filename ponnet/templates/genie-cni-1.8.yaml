@@ -226,7 +226,7 @@ spec:
 apiVersion: apps/v1
 kind: DaemonSet
 metadata:
-  name: genie-network-admission-controller
+  name: genie-network-admission-controller1
   namespace: kube-system
 spec:
   template:
@@ -258,7 +258,7 @@ kind: Service
 metadata:
   labels:
     role: genie-network-admission-controller
-  name: genie-network-admission-controller
+  name: genie-network-admission-controller2
   namespace: kube-system
 spec:
   ports:
