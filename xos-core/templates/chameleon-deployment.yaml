@@ -29,7 +29,6 @@ spec:
     metadata:
       labels:
         app: xos-chameleon
-        release: {{ .Release.Name }} 
     spec:
       containers:
         - name: xos-chameleon
