@@ -28,7 +28,7 @@ spec:
   template:
     metadata:
       labels:
-        app: xos-tosca
+        name: xos-tosca
         release: {{ .Release.Name }}
     spec:
       containers:
