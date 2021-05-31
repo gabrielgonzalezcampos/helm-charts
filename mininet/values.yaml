@@ -23,7 +23,7 @@ fullnameOverride: ""
 
 images:
   mininet:
-    repository: 'andybavier/mininet'
+    repository: 'iwaseyusuke/mininet'
     tag: '{{ .Chart.AppVersion }}'
     pullPolicy: IfNotPresent
 
